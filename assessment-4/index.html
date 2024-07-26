@@ -14,7 +14,6 @@
         <p id="error-message" style="color:red;"></p>
     </form>
     <script>
-        // Your JavaScript code here
         document.getElementById('email-form').addEventListener('submit', function(event) {
             event.preventDefault();
             const emailInput = document.getElementById('email').value;
@@ -25,7 +24,6 @@
                 errorMessage.textContent = 'Please enter a valid email address.';
             } else {
                 errorMessage.textContent = '';
-                // You can proceed with form submission or other actions here
                 alert('Email is valid! Form can be submitted.');
             }
         });
